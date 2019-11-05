@@ -2,7 +2,7 @@ import React from 'react';
 
 function RouteLoading(){
     return (
-        <div>loading.......。。    。。.</div>
+        <div>loading.......。213123 。。.</div>
     )
 }
 
