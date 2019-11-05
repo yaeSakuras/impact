@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "370d54d0c6c29777d8f1f92a9af3518d",
+    "revision": "1f6cafee99340f8428c72454a5de1b75",
     "url": "/react-impact/index.html"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-impact/static/css/6.00a8895b.chunk.css"
   },
   {
-    "revision": "e999d359ce26c6bc689d",
+    "revision": "106960937d44706a1d1c",
     "url": "/react-impact/static/css/main.6811f87e.chunk.css"
   },
   {
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-impact/static/js/9.24ece907.chunk.js"
   },
   {
-    "revision": "e999d359ce26c6bc689d",
-    "url": "/react-impact/static/js/main.7cf89100.chunk.js"
+    "revision": "106960937d44706a1d1c",
+    "url": "/react-impact/static/js/main.60738b39.chunk.js"
   },
   {
     "revision": "5f0a5ecd5f7a651a104b",
