@@ -4,6 +4,8 @@ import RouteLoading from "@/components/Route/RouteLoading";
 import RouteWithSubRoutes from "@/components/Route/RouteWithSubRoutes";
 import routerConfig from "@/routerConfig";
 
+
+
 const {Router, Switch} = router;
 
 export default ({history}) => {
