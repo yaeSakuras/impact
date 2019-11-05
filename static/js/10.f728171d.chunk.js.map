@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/reactor/index.js"],"names":["Reactor","props"],"mappings":"uGAAA,2BAQeA,UANf,SAAiBC,GACb,OACI","file":"static/js/10.f728171d.chunk.js","sourcesContent":["import React from 'react';\n\nfunction Reactor(props) {\n    return (\n        <div>qweqwe</div>\n    )\n}\n\nexport default Reactor;"],"sourceRoot":""}

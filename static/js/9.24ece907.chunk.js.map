@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/other/index.js"],"names":["Other","props"],"mappings":"sGAAA,2BAQeA,UANf,SAAeC,GACX,OACI","file":"static/js/9.24ece907.chunk.js","sourcesContent":["import React from 'react';\n\nfunction Other(props) {\n    return (\n        <div>Other</div>\n    )\n}\n\nexport default Other;"],"sourceRoot":""}
