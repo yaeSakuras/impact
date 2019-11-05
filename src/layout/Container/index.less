@@ -1,0 +1,59 @@
+@import "../../theme";
+
+.z-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .z-navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid @border-color;
+    padding: 0.8rem 1.5rem;
+    color: @text-color;
+    .z-title{
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .z-links{
+      display: flex;
+      line-height: 1.9rem;
+      .z-nav-item:first-child{
+        margin-left: 0;
+      }
+      .z-nav-item{
+        margin-left: 1.5rem;
+        a{
+          font-weight: 500;
+          color: @text-color;
+        }
+      }
+    }
+  }
+  .z-page{
+    flex: 1;
+    overflow: auto;
+    text-align: center;
+    padding: 1rem;
+    .z-article-list{
+      ul{
+        padding: 0;
+        margin:0;
+        list-style: none;
+      }
+      li{
+        margin-bottom: .5rem;
+      }
+      a{
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.2;
+        color: @text-color;
+      }
+      a:hover{
+        color: @blue-color;
+      }
+    }
+  }
+}
