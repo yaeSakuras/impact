@@ -1,6 +1,7 @@
 {
   "name": "impact",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "license": "MIT",
   "homepage": "https://yaesakuras.github.io/impact",
   "dependencies": {
     "dva": "2.6.0-beta.14",
@@ -34,9 +35,17 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "cross-env": "^6.0.0",
     "customize-cra": "^0.7.0",
+    "husky": "^3.0.9",
     "react-app-rewired": "^2.1.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "rules": {
     "no-undef": "off",
