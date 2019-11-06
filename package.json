@@ -17,7 +17,8 @@
     "start": "cross-env PORT=8026 react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "eslintConfig": {
     "extends": "react-app"
