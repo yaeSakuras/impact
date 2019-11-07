@@ -92,6 +92,7 @@ pre {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 
   .z-article-header {
     height: 3.5rem;
@@ -316,4 +317,14 @@ pre {
   code[class~=language-php]:before {
     content: "php"
   }
+}
+.string-value{
+  word-break: break-all;
+}
+.z-view-input textarea{
+  height: calc(100vh - 5.5rem);
+}
+.z-view-scroll{
+  height: calc(100vh - 5.5rem);
+  overflow-y: auto;
 }

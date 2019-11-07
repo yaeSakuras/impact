@@ -15,15 +15,24 @@ function Left(props) {
     };
 
     return (
-        <div>
+        <div className="z-view-input">
             <ZtextArea onChange={onChange} value={props.text} row={30} />
         </div>
     )
 }
 
 function Right(props) {
+    let object = {};
+    try {
+        object = JSON.parse(props.text);
+    } catch(e) {
+        object = console.log(e);
+    }
+
     return (
-        <ReactJson src={JSON.parse(props.text)}/>
+        <div className="z-view-scroll">
+            <ReactJson src={object}/>
+        </div>
     )
 }
 
