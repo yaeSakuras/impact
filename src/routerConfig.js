@@ -7,6 +7,7 @@ const Reactor = React.lazy(() => import('./views/reactor'));
 const Other = React.lazy(() => import('./views/other'));
 const QueryString = React.lazy(() => import('./views/articles/js/queryString'));
 const ObjectToStr = React.lazy(() => import('./views/articles/js/objectToStr'));
+const JsonView = React.lazy(() => import('./views/tool/jsonView'));
 export default [
     {
         path: '/',
@@ -37,5 +38,9 @@ export default [
     {
         path: '/js/objectToStr',
         component: ObjectToStr,
+    },
+    {
+        path: '/tool/jsonView',
+        component: JsonView,
     }
 ];

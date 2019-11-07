@@ -8,7 +8,7 @@ class CaseInput extends React.Component{
         return (
             <div>
                 {
-                    getFieldDecorator("text")(<ZtextArea />)
+                    getFieldDecorator("text")(<ZtextArea row={this.props.row}/>)
                 }
             </div>
         )

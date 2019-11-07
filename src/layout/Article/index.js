@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.less';
 import Markdown from "react-markdown";
 import CodeBlock from '@/components/Code';
 function Article(props) {

@@ -69,3 +69,251 @@ pre {
 .z-button-primary:active{
   background:@blue-active;
 }
+
+@media screen and (min-width: 600px) {
+  .z-article-content {
+    .z-article-body {
+      flex: 1;
+      display: flex;
+
+      .z-article-left {
+        flex: 1;
+        border-right: 1px solid @border-color;
+      }
+
+      .z-article-right {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.z-article-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .z-article-header {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid @border-color;
+  }
+
+  .z-article-left, .z-article-right {
+    padding: 1rem;
+  }
+}
+
+.z-markdown {
+  color: @text-color;
+
+  a {
+    font-weight: 500;
+    text-decoration: none
+  }
+
+  a, p a code {
+    color: @blue-color;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem
+  }
+
+  h2 {
+    font-size: 1.65rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #eaecef
+  }
+
+  h3 {
+    font-size: 1.35rem
+  }
+
+  code, kbd {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+  }
+
+  p a code {
+    font-weight: 400
+  }
+
+  ol, p, ul {
+    line-height: 1.7
+  }
+
+  ol, ul {
+    padding-left: 1.2em
+  }
+
+  blockquote > p {
+    margin: 0
+  }
+
+  blockquote {
+    font-size: 1rem;
+    color: #999;
+    border-left: .2rem solid #dfe2e5;
+    margin: 1rem 0;
+    padding: .25rem 0 .25rem 1rem
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid #eaecef
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    display: block;
+    overflow-x: auto
+  }
+
+  tr {
+    border-top: 1px solid #dfe2e5
+  }
+
+  tr:nth-child(2n) {
+    background-color: #f6f8fa
+  }
+
+  td, th {
+    border: 1px solid #dfe2e5;
+    padding: .6em 1em
+  }
+
+  code[class*=language-]{
+    position: relative;
+    margin: 1rem 0;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+  }
+  code[class*=language-]:before {
+    position: absolute;
+    z-index: 3;
+    top: .8em;
+    right: 1em;
+    font-size: .75rem;
+    color: @text-color;
+  }
+
+  code[class~=language-js]:before {
+    content: "js"
+  }
+
+  code[class~=language-ts]:before {
+    content: "ts"
+  }
+
+  code[class~=language-html]:before {
+    content: "html"
+  }
+
+  code[class~=language-md]:before {
+    content: "md"
+  }
+
+  code[class~=language-vue]:before {
+    content: "vue"
+  }
+
+  code[class~=language-css]:before {
+    content: "css"
+  }
+
+  div[class~=language-sass]:before {
+    content: "sass"
+  }
+
+  code[class~=language-scss]:before {
+    content: "scss"
+  }
+
+  code[class~=language-less]:before {
+    content: "less"
+  }
+
+  code[class~=language-stylus]:before {
+    content: "stylus"
+  }
+
+  code[class~=language-go]:before {
+    content: "go"
+  }
+
+  code[class~=language-java]:before {
+    content: "java"
+  }
+
+  code[class~=language-c]:before {
+    content: "c"
+  }
+
+  code[class~=language-sh]:before {
+    content: "sh"
+  }
+
+  code[class~=language-yaml]:before {
+    content: "yaml"
+  }
+
+  code[class~=language-py]:before {
+    content: "py"
+  }
+
+  code[class~=language-docker]:before {
+    content: "docker"
+  }
+
+  code[class~=language-dockerfile]:before {
+    content: "dockerfile"
+  }
+
+  code[class~=language-makefile]:before {
+    content: "makefile"
+  }
+
+  code[class~=language-javascript]:before {
+    content: "js"
+  }
+
+  code[class~=language-typescript]:before {
+    content: "ts"
+  }
+
+  code[class~=language-markup]:before {
+    content: "html"
+  }
+
+  code[class~=language-markdown]:before {
+    content: "md"
+  }
+
+  code[class~=language-json]:before {
+    content: "json"
+  }
+
+  code[class~=language-ruby]:before {
+    content: "rb"
+  }
+
+  div[class~=language-python]:before {
+    content: "py"
+  }
+
+  code[class~=language-bash]:before {
+    content: "sh"
+  }
+
+  code[class~=language-php]:before {
+    content: "php"
+  }
+}

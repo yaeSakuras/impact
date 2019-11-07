@@ -4,10 +4,11 @@ import "../index.less";
 class ZtextArea extends React.Component {
 
     render() {
-        const {onChange, value} = this.props;
+        const {onChange, value, row} = this.props;
+        let r = row ? row : 8;
         return (
             <div className="z-textarea">
-                <textarea rows="8" onChange={(e) => onChange(e.target.value)} value={value}/>
+                <textarea rows={r} onChange={(e) => onChange(e.target.value)} value={value}/>
             </div>
         )
     }

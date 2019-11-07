@@ -28,7 +28,7 @@ function CaseContent() {
     };
 
     return (
-        <div>
+        <>
             <CaseInput wrappedComponentRef={inputRef}/>
             <div className="z-btn-content">
                 <a href="#javascript" onClick={onTransForm} role="button" className="z-button z-button-primary">转换</a>
@@ -36,7 +36,7 @@ function CaseContent() {
             {
                 text ? <CodeBlock value={text} language="js"/> : null
             }
-        </div>
+        </>
     )
 }
 
