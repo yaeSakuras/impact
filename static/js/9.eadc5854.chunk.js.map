@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/css/index.js"],"names":["Css","props"],"mappings":"sGAAA,2BAQeA,UANf,SAAaC,GACT,OACI","file":"static/js/9.eadc5854.chunk.js","sourcesContent":["import React from 'react';\n\nfunction Css(props) {\n    return (\n        <div>css</div>\n    )\n}\n\nexport default Css;"],"sourceRoot":""}
