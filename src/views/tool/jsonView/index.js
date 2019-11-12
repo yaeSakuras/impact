@@ -31,7 +31,7 @@ function Right(props) {
 
     return (
         <div className="z-view-scroll">
-            <ReactJson src={object}/>
+            <ReactJson displayDataTypes={false} src={object}/>
         </div>
     )
 }
