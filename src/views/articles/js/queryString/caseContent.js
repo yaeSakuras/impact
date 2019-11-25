@@ -28,7 +28,7 @@ function CaseContent() {
         <div>
             <CaseInput wrappedComponentRef={inputRef}/>
             <div className="z-btn-content">
-                <a onClick={onTransForm} role="button" className="z-button z-button-primary">转换</a>
+                <a href="#javascript" onClick={onTransForm} role="button" className="z-button z-button-primary">转换</a>
             </div>
             {
                 text ? <CodeBlock value={text} language="js"/> : null
