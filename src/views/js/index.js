@@ -10,6 +10,9 @@ function JavaScript(props) {
     },{
         href:'#/js/objectToStr',
         title:"对象转换成查询字符串"
+    },{
+        href:'#/js/judgmentType',
+        title:"类型判断"
     }].map(item => {
         return {
             href:`${pathname}${item.href}`,

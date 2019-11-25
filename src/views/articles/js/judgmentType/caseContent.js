@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import CaseInput from "@/components/CaseInput";
 import CodeBlock from "@/components/Code";
-import { queryString } from "@/utils/queryString";
 
 const inputRef = React.createRef();
 
@@ -12,7 +11,7 @@ function CaseContent() {
         if(!text){
             const ref = inputRef.current.props.form;
             ref.setFieldsValue({
-                text: "?name=zzh&age=%E5%8C%97%E4%BA%AC"
+                text: "qwe"
             });
         }
     },[text]);
@@ -20,8 +19,8 @@ function CaseContent() {
     const onTransForm = (e) => {
         e.preventDefault();
         const ref = inputRef.current.props.form;
-        const text = queryString(2,ref.getFieldValue("text"));
-        setText(JSON.stringify(text,null,2));
+        const text = ref.getFieldValue("text");
+        setText(text);
     };
 
     return (
