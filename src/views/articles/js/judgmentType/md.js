@@ -1,7 +1,7 @@
 export default `
 ### javascript类型判断
 
-#### 基本类型的判断：
+#### 基本类型的判断
 
 - 基本类型有 \`str\`、 \`number\`、 \`boolean\`、 \`null\`、 \`undefined\`、 \`symbol\` 
 
@@ -47,7 +47,7 @@ typeof Symbol.iterator === 'symbol';
 typeof null === 'object';
 \`\`\`
 
-#### 引用数据类型的判断：
+#### 引用数据类型的判断
 
 ##### 使用\`Object.prototype.toString\`方法
 
@@ -57,5 +57,58 @@ const toString = Object.prototype.toString;
 toString.call({}) === '[object Object]';
 
 toString.call([]) === '[object Array]';
+
+toString.call(/\\./) === '[object RegExp]';
+
+toString.call(new Date()) === '[object Date]';
+
+toString.call(new Error()) === '[object Error]';
+
+// null可以正确没判断
+toString.call(null) === '[object Null]';
 \`\`\`
+
+#### 判断类型的通用方法(实际开发常用)
+
+\`\`\`js
+const toString = Object.prototype.toString;
+
+function isNumber(val) {
+  return typeof val === 'number';
+}
+
+function isString(val) {
+  return typeof val === 'string';
+}
+
+function isBoolean(val) {
+  return typeof val === 'boolean';
+}
+
+function isUndefined(val) {
+  return typeof val === 'undefined';
+}
+
+function isNull(val) {
+  returntoString.call(val) === '[object Null]';
+}
+
+function isObject(val) {
+  return val !== null && typeof val === 'object';
+}
+
+function isArray(val) {
+  return toString.call(val) === '[object Array]';
+}
+
+function isDate(val) {
+  return toString.call(val) === '[object Date]';
+}
+
+function isFunction(val) {
+  return toString.call(val) === '[object Function]';
+}
+\`\`\`
+
+[utils](https://github.com/axios/axios/blob/master/lib/utils.js)
 `;
